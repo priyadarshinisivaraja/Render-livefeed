@@ -8,4 +8,4 @@ app = FastAPI()
 @app.get("/", response_class=HTMLResponse)
 def serve_index():
     with open("index.html", "r") as f:
-        return f.read()
+        return f.read()
