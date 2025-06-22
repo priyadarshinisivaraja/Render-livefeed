@@ -13,10 +13,9 @@
     <img id="liveImage" src="https://esp32-cam-live.onrender.com/latest" alt="Live Stream">
     <script>
         const img = document.getElementById('liveImage');
-
         setInterval(() => {
             const timestamp = new Date().getTime(); // prevent caching
-            img.src = https://esp32-cam-live.onrender.com/latest?t=${timestamp};
+            img.src = `https://esp32-cam-live.onrender.com/latest?t=${timestamp}`;
         }, 1000); // refresh every 1 second
     </script>
 </body>
