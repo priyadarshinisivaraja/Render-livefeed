@@ -10,13 +10,13 @@
 </head>
 <body>
     <h1>ESP32-CAM Live Feed</h1>
-    <img id="liveImage" src="/latest" alt="Live Stream">
+    <img id="liveImage" src="https://esp32-cam-live.onrender.com/latest" alt="Live Stream">
     <script>
         const img = document.getElementById('liveImage');
 
         setInterval(() => {
             const timestamp = new Date().getTime(); // prevent caching
-            img.src = /latest?t=${timestamp};
+            img.src = https://esp32-cam-live.onrender.com/latest?t=${timestamp};
         }, 1000); // refresh every 1 second
     </script>
 </body>
